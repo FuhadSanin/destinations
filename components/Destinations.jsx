@@ -1,13 +1,19 @@
 import React from "react"
+import Cards from "./Cards"
 
 const Destinations = ({ CardsData }) => {
   return (
     <>
-      {console.log(CardsData)}
       {CardsData &&
         CardsData.map(card => (
-          <div>
-            <h1>{card.name}</h1>
+          <div className="destinations">
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
+            <Cards />
           </div>
         ))}
     </>
