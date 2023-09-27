@@ -1,9 +1,16 @@
-import React from "react"
+import React from 'react';
+import Searchbar from './banner/Searchbar';
+import styles from './Banner.module.css';
+import Calender from './banner/Calender';
 
 const Banner = () => {
-  return (
-    <div>Banner</div>
-  )
-}
+    return (
+        <div className={styles.banner}>
 
-export default Banner
+            <Searchbar />
+            <Calender />
+        </div>
+      );
+}
+ 
+export default Banner;
