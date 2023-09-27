@@ -10,7 +10,11 @@
   },
   "dependencies": {
     "firebase": "^8.10.1",
-    "next": "13.4.12",
+    "@headlessui/react": "^1.7.17",
+    "next": "^13.4.12",
+    "antd": "^5.9.3",
+    "moment": "^2.29.4",
+
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.11.0"
