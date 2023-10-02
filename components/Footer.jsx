@@ -8,8 +8,10 @@ import {
   FaFacebook,
   FaTwitter,
   FaGooglePlusG,
-  FaTelegramPlane,
+  FaInstagram,
 } from "react-icons/fa"
+import iata from "../assets/IATA.png.webp"
+import asta from "../assets/asta.png"
 import Image from "next/image"
 
 const Footer = () => {
@@ -32,7 +34,7 @@ const Footer = () => {
                 <FaPhone className="icon" />
                 <div className="cta-text">
                   <h4>Call us</h4>
-                  <span>9876543210 0</span>
+                  <span>9876543210</span>
                 </div>
               </div>
             </div>
@@ -53,11 +55,7 @@ const Footer = () => {
               <div className="footer-widget">
                 <div className="footer-logo">
                   <a href="index.html">
-                    <Image
-                      src=""
-                      className="img-fluid"
-                      alt="Company_logo"
-                    />
+                    <Image src="" className="img-fluid" alt="Company_logo" />
                   </a>
                 </div>
                 <div className="footer-text">
@@ -67,47 +65,46 @@ const Footer = () => {
                     elit,Lorem ipsum dolor sit amet.
                   </p>
                 </div>
-                <div className="footer-social-icon">
-                  <span>Follow us</span>
-                  <a href="#">
-                    <FaFacebook className="facebook-bg" />
-                  </a>
-                  <a href="#">
-                    <FaTwitter className="twitter-bg" />
-                  </a>
-                  <a href="#">
-                    <FaGooglePlusG className="google-bg" />
-                  </a>
-                </div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
-              {/* <div className="footer-widget">
-                <div className="footer-widget-heading">
-                  <h3>Subscribe</h3>
-                </div>
-                <div className="footer-text mb-25">
-                  <p>
-                    Don’t miss to subscribe to our new feeds, kindly fill the
-                    form below.
-                  </p>
-                </div>
-                <div className="subscribe-form">
-                  <form action="#">
-                    <input type="text" placeholder="Email Address" />
-                    <button>
-                      <FaTelegramPlane />
-                    </button>
-                  </form>
-                </div>
-              </div> */}
+              <div className="footer-logo">
+                <Image
+                  width={130}
+                  height={130}
+                  src={iata}
+                  className="img-fluid"
+                  alt="iata"
+                />
+                <Image
+                  width={100}
+                  height={100}
+                  src={asta}
+                  className="img-fluid"
+                  alt="asta"
+                />
+              </div>
+              <div className="footer-social-icon">
+                <a href="#">
+                  <FaFacebook className="footer-socail-icon-logo" />
+                </a>
+                <a href="#">
+                  <FaTwitter className="footer-socail-icon-logo" />
+                </a>
+                <a href="#">
+                  <FaGooglePlusG className="footer-socail-icon-logo" />
+                </a>
+                <a href="#">
+                  <FaInstagram className="footer-socail-icon-logo" />
+                </a>
+              </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 mb-50">
               <div className="footer-widget">
                 <div className="footer-widget-heading">
                   <h3>Useful Links</h3>
                 </div>
-                <ul>
+                <ul className="useful-list">
                   <li>
                     <a href="#">Home</a>
                   </li>
@@ -149,9 +146,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-xl-6 col-lg-6 text-center text-lg-left">
               <div className="copyright-text">
-                <p>
-                  Copyright &copy; 2018, All Right Reserved{" "}
-                </p>
+                <p>Copyright &copy; 2018, All Right Reserved </p>
               </div>
             </div>
             <div className="col-xl-6 col-lg-6 d-none d-lg-block text-right">

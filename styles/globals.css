@@ -86,28 +86,30 @@ body {
 .rating span {
   margin-left: 5px; /* Adjust spacing between rating number and stars */
 }
-
 .destinations {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.destinations-card{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
 }
 
 /* Footer.css */
-
-/* YourFooter.css */
-
 ul {
   margin: 0;
   padding: 0;
 }
-
 .footer-section {
   background: var(--primary-color);
-  position: relative;
 }
 
 .footer-cta {
@@ -155,6 +157,11 @@ ul {
 
 .footer-logo {
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .footer-logo img {
@@ -167,29 +174,24 @@ ul {
   color: #cccccc;
   line-height: 28px;
 }
-
-.footer-social-icon span {
-  color: #fff;
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 20px;
+.footer-social-icon {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
-
 .footer-social-icon a {
   color: #fff;
   font-size: 25px;
-  margin-right: 15px;
+}
+.footer-socail-icon-logo{
+  transition: all 0.3s ;
+}
+.footer-socail-icon-logo:hover{
+  transform: scale(1.2);
 }
 
-.footer-social-icon i {
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  line-height: 38px;
-  border-radius: 50%;
-}
 
 
 .footer-widget-heading h3 {
@@ -197,23 +199,23 @@ ul {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 40px;
+  text-align: center;
   position: relative;
 }
 
 .footer-widget-heading h3::before {
   content: "";
   position: absolute;
-  left: 0;
   bottom: -15px;
   height: 2px;
   width: 50px;
   background: var(--secondary-color);
 }
-
 .footer-widget ul li {
   display: inline-block;
   width: 50%;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .footer-widget ul li a:hover {
