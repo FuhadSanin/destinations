@@ -7,7 +7,7 @@ body {
 
 :root {
   --primary-color: #092068;
-  --secondary-color: #70C0F2;
+  --secondary-color: #70c0f2;
 }
 
 .card-container {
@@ -94,13 +94,12 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.destinations-card{
+.destinations-card {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-
 }
 
 /* Footer.css */
@@ -137,7 +136,6 @@ ul {
 
 .cta-text span {
   color: #cccccc;
-
   font-size: 15px;
 }
 
@@ -185,14 +183,12 @@ ul {
   color: #fff;
   font-size: 25px;
 }
-.footer-socail-icon-logo{
-  transition: all 0.3s ;
+.footer-socail-icon-logo {
+  transition: all 0.3s;
 }
-.footer-socail-icon-logo:hover{
+.footer-socail-icon-logo:hover {
   transform: scale(1.2);
 }
-
-
 
 .footer-widget-heading h3 {
   color: #fff;
@@ -278,4 +274,15 @@ ul {
 .footer-menu li a {
   font-size: 14px;
   color: #cccccc;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: var(--primary-color);
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
