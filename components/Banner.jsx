@@ -15,6 +15,6 @@ const Banner = () => {
             <Adults />
         </div>
       );
-}
- 
+    }
+
 export default Banner;
