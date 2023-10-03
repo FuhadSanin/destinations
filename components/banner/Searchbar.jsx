@@ -9,7 +9,7 @@ const Searchbar = () => {
   const searchRef = useRef(null);
 
   const handleInputChange = (e) => {
-    const newQuery = e.target.value;
+     const newQuery = e.target.value;
     setQuery(newQuery);
 
     // Replace this with your logic to fetch suggestions from an API
@@ -19,8 +19,7 @@ const Searchbar = () => {
     );
 
     setSuggestions(filteredSuggestions);
-    setShowSuggestions(true);
-    if (filteredSuggestions.length === 0) {
+     if (filteredSuggestions.length === 0) {
       setShowSuggestions(false);
     }
   };
@@ -51,6 +50,7 @@ const Searchbar = () => {
         placeholder="Search..."
         value={query}
         onChange={handleInputChange}
+        onClick={() => setShowSuggestions(true)}
       />
       {showSuggestions && (
         <ul className={styles.suggestionlist}>
