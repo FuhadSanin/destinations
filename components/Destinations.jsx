@@ -7,13 +7,15 @@ const Destinations = ({ CardsData }) => {
       {CardsData &&
         CardsData.map(card => (
           <div className="destinations">
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
+            <div className="destinations-card">
+              <Cards />
+              <Cards />
+              <Cards />
+              <Cards />
+              <Cards />
+              <Cards />
+              <Cards />
+            </div>
           </div>
         ))}
     </>
