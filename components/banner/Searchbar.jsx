@@ -7,9 +7,9 @@ const Searchbar = () => {
   const [showSuggestions, setShowSuggestions] = useState(false)
   const searchRef = useRef(null)
 
-  const handleInputChange = e => {
-    const newQuery = e.target.value
-    setQuery(newQuery)
+  const handleInputChange = (e) => {
+    const newQuery = e.target.value;
+    setQuery(newQuery);
 
     // Replace this with your logic to fetch suggestions from an API
     const staticSuggestions = ["Apple", "Banana", "Cherry", "Orange"]
@@ -17,10 +17,10 @@ const Searchbar = () => {
       item.toLowerCase().includes(newQuery.toLowerCase())
     )
 
-    setSuggestions(filteredSuggestions)
-    setShowSuggestions(true)
+    setSuggestions(filteredSuggestions);
+    setShowSuggestions(true);
     if (filteredSuggestions.length === 0) {
-      setShowSuggestions(false)
+      setShowSuggestions(false);
     }
   }
 
