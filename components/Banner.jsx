@@ -7,13 +7,15 @@ import Adults from './banner/Adults';
 
 const Banner = () => {
     return (
+        <div>
+        <p className={styles.main}> Wingardium Leviosa</p>
         <div className={styles.banner}>
-
             <Searchbar />
             <Calender />
             <Nationality />
             <Adults />
         </div>
+        </div>   
       );
     }
 

@@ -1,8 +1,19 @@
 .banner{
-    background-color:var(--primary-color);
     padding:.4rem .1rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color:rgb(0, 45, 192);
+}
+
+.main{
+    margin: 0;
+    padding: 2rem;
+    font-size: 50px;
+    color: antiquewhite;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(0, 20, 86);
 }
