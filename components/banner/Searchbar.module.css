@@ -1,48 +1,48 @@
 .searchbody{
-  margin:5px 5px 0px 5px;
+  margin:0px 2px 0px 2px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   border: none;
   border-radius: 6px;
   outline: none;
   background-color: #5b82b9;
+ 
 }
 
 .searchbar{
-  width: 98vw;
+  width: 24rem;
   background-color: #ffffff;
   padding: 1rem 1rem;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border-radius: 6px;
-  margin: 0rem 0rem;
   border: none;
-  transition: outline 0.2s;
+  transition: outline .2s;
   outline: none;
 }
 
-.searchbar:hover {
+.searchbar:hover{
   border: none;
-  outline: solid 1px #006aff;
-}
+    outline: solid 1px #006aff;
+ }
 
 .suggestionlist{
     position: absolute;
-    top:6rem;
+    top: 17.8rem;
     background-color: rgb(234, 234, 234);
     color: rgb(42, 42, 42);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-    width: 40rem;
+    width: 24rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    border-radius: 6px;
-    z-index: 1;
+    border-radius: 12px;
+    z-index: 10;
 }
 
 .suggestionitem{
-  padding: 1rem ;
+  padding: .8rem ;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -56,3 +56,30 @@
 
 
  
+
+.nationallist{
+  padding: 0;
+  top: 17.8rem;
+  margin:0px 2px 0px 2px;
+  max-height:15rem;
+  overflow-y: scroll;
+  
+  
+}
+
+.nationallist::-webkit-scrollbar {
+  
+  width: 0rem;
+
+}
+
+.nationallist::-webkit-scrollbar-thumb {
+  
+  background-color: #888;
+
+}
+
+.nationbody{
+
+  margin-top: 0px;
+}
