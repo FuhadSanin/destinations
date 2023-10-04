@@ -6,15 +6,12 @@
   border: none;
   border-radius: 6px;
   outline: none;
-  background-color: #ffffff;
-  flex: 1;
-  width: 100%;
+  background-color: #5b82b9;
+ 
 }
 
 .searchbar{
-  min-width: 50%;
-  width: 100%;
-  flex: 1;
+  width: 24rem;
   background-color: #ffffff;
   padding: 1rem 1rem;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -31,14 +28,14 @@
 
 .suggestionlist{
     position: absolute;
-    top: 18rem;
+    top: 17.8rem;
     background-color: rgb(234, 234, 234);
     color: rgb(42, 42, 42);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width:20% ;
+    width: 24rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 12px;
     z-index: 10;
@@ -62,7 +59,7 @@
 
 .nationallist{
   padding: 0;
-  top: 18rem;
+  top: 17.8rem;
   margin:0px 2px 0px 2px;
   max-height:15rem;
   overflow-y: scroll;

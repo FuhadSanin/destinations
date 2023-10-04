@@ -10,6 +10,7 @@ const Calender = () => {
   console.log(dates)
 
   return (
+    <div>
       <RangePicker
         className={styles.calender}
         onChange={values => {
@@ -25,6 +26,7 @@ const Calender = () => {
           )
         }}
       />
+    </div>
   )
 }
 
