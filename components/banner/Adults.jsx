@@ -39,7 +39,8 @@ const Adults = () => {
                 <button className={styles.button} onClick={()=>{on_button_click()}} />
 
             </div>
- 
+        <div>
+
             { drop_visible && 
             <div className={styles.dropdown}>
                 <div className={styles.dropsection}>
@@ -57,6 +58,7 @@ const Adults = () => {
                     <button className={styles.buttondrop}></button>                </div>
           </div>
     }
+    </div>
           </div>
     );
 }
