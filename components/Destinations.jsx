@@ -14,7 +14,6 @@ const Destinations = ({ CardsData }) => {
               <Cards />
               <Cards />
               <Cards />
-              <Cards />
             </div>
           </div>
         ))}
