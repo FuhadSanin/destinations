@@ -245,7 +245,7 @@ const Nationality = () => {
       <input
         type="text"
         className={styles.searchbar}
-        placeholder="Search..."
+        placeholder="Nationality"
         value={query}
         onChange={handleInputChange}
         onClick={() => setShowSuggestions(true)}

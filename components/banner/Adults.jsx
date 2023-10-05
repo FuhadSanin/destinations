@@ -34,9 +34,9 @@ const Adults = () => {
 
   return (
     <div className={styles.mainbody} ref={inputRef}>
-      <p>{adults}:Adults</p>
-      <p>{children}:Children</p>
-      <p>{rooms}:Rooms</p>
+      <p>{adults}:Adults</p><hr />
+      <p>{children}:Children</p><hr />
+      <p>{rooms}:Rooms</p><hr />
       <div className={styles.buttonbody}>
         <AiOutlineDown
           className={styles.button}
@@ -53,11 +53,13 @@ const Adults = () => {
               <p>Adults</p>
               <AiOutlinePlusSquare className={styles.buttondrop}/>
             </div>
+              <hr />
             <div className={styles.dropsection}>
               <AiOutlineMinusSquare className={styles.buttondrop}/>
               <p>Children</p>
               <AiOutlinePlusSquare className={styles.buttondrop}/>
             </div>
+              <hr />
             <div className={styles.dropsection}>
               <AiOutlineMinusSquare className={styles.buttondrop}/>
               <p>Rooms</p>

@@ -8,6 +8,8 @@
   outline: none;
   background-color: #ffffff;
   flex: 1;
+  color:rgb(0, 0, 0) ;
+
   width: 100%;
 }
 
@@ -21,6 +23,7 @@
   border-radius: 6px;
   border: none;
   transition: outline .2s;
+
   outline: none;
 }
 
@@ -32,7 +35,7 @@
 .suggestionlist{
     position: absolute;
     top: 18rem;
-    background-color: rgb(234, 234, 234);
+    background-color: rgb(255, 255, 255);
     color: rgb(42, 42, 42);
     display: flex;
     flex-direction: column;
@@ -54,9 +57,23 @@
   width: 100%;
   border-radius: 5px 5px 5px 5px;
   border: solid 1px #e0e0e0;
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
+  transition: all .2s ease;
 }
 
+.loc{
+  margin: 0rem 1rem;
+  font-size: 20px;
+}
+
+.suggestionitem>hr{
+  width: 2rem;
+  rotate: 90deg;
+}
+
+.suggestionitem:hover{
+  background-color: rgb(228, 228, 228);
+ }
 
  
 

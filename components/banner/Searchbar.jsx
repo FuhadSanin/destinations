@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react"
 import styles from "./Searchbar.module.css"
+import {GrLocation} from "react-icons/gr";
 
 const Searchbar = () => {
   const [query, setQuery] = useState("")
@@ -47,7 +48,7 @@ const Searchbar = () => {
       <input
         type="text"
         className={styles.searchbar}
-        placeholder="Search..."
+        placeholder="Where are you going?"
         value={query}
         onChange={handleInputChange}
         onClick={() => setShowSuggestions(true)}
@@ -56,10 +57,11 @@ const Searchbar = () => {
         <ul className={styles.suggestionlist}>
           {suggestions.map((suggestion, index) => (
             <li
-              key={index}
-              className={styles.suggestionitem}
-              onClick={() => handleSuggestionClick(suggestion)}
+            key={index}
+            className={styles.suggestionitem}
+            onClick={() => handleSuggestionClick(suggestion)}
             >
+            <GrLocation  className={styles.loc}/><hr />
               {suggestion}
             </li>
           ))}
