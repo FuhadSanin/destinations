@@ -34,7 +34,7 @@
 
 .suggestionlist{
     position: absolute;
-    top: 18rem;
+    top:  33.1rem;
     background-color: rgb(255, 255, 255);
     color: rgb(42, 42, 42);
     display: flex;
@@ -79,7 +79,7 @@
 
 .nationallist{
   padding: 0;
-  top: 18rem;
+  top:  33.1rem;
   margin:0px 2px 0px 2px;
   max-height:15rem;
   overflow-y: scroll;
