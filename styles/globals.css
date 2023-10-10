@@ -91,7 +91,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 10rem;
   margin-bottom: 50px;
 }
 .destinations-card {
@@ -113,6 +113,8 @@ ul {
 
 .footer-cta {
   border-bottom: 1px solid #cccccc96;
+  display: flex;
+  flex-direction: column;
 }
 
 .single-cta .icon {
@@ -123,7 +125,6 @@ ul {
 }
 
 .cta-text {
-  padding-left: 15px;
   display: inline-block;
 }
 
@@ -280,9 +281,51 @@ ul {
 
 .navbar {
   background-color: var(--primary-color);
-  padding: 0 20px;
-  height: 80px;
+  height: fit-content;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  padding-bottom: 50px;
+  gap: 30px;
+}
+
+.navbar .left a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+  padding-left: 35px;
+  font-weight: 500;
+}
+.tab-header {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+.tab {
+  padding: 5px 25px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  border-radius: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(239, 206, 206, 0);
+}
+
+.tab.active {
+  background-color: #ffffff09;
+  border: 2px solid rgb(255, 255, 255);
+
+  color: white;
+}
+.tab:hover {
+  background-color: #ffffff09;
+}
+
+.tab-content {
+  margin-top: 10px;
 }
