@@ -4,7 +4,7 @@ import styles from "./Banner.module.css"
 import Calender from "./banner/Calender"
 import Nationality from "./banner/Nationality"
 import Adults from "./banner/Adults"
-
+ 
 const Banner = () => {
   return (
     <div>
@@ -16,7 +16,8 @@ const Banner = () => {
         <Calender />
         <Nationality />
         <Adults />
-      </div>
+ 
+       </div>
     </div>
   )
 }
