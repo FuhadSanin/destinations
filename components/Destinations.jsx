@@ -1,22 +1,34 @@
-import React from "react"
+// Destinations.jsx
+
+import React, { useState } from "react"
 import Cards from "./Cards"
+import Booking from "./Booking"
 
 const Destinations = ({ CardsData }) => {
+  const [selectedCard, setSelectedCard] = useState(null)
+  const handleSubmit = card => {
+    setSelectedCard(card)
+  }
+
   return (
     <>
-      {CardsData &&
-        CardsData.map(card => (
-          <div className="destinations">
-            <div className="destinations-card">
-              <Cards />
-              <Cards />
-              <Cards />
-              <Cards />
-              <Cards />
-              <Cards />
-            </div>
-          </div>
-        ))}
+      <div className="destinations">
+        <div className="destinations-card">
+          {CardsData &&
+            CardsData.map((card, index) => (
+              <Cards
+                key={index}
+                name={card.name}
+                image={card.image}
+                rating={card.rating}
+                desc={card.desc}
+                card={card}
+                onSelect={handleSubmit}
+              />
+            ))}
+        </div>
+      </div>
+      <Booking selectedCard={selectedCard} />
     </>
   )
 }

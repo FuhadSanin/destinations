@@ -1,4 +1,5 @@
-import { Banner, Cards, Destinations } from "@/components"
+import { useState } from "react"
+import { Banner, Booking, Destinations } from "@/components"
 import { firestore } from "@/utils/firebase"
 
 export default function Home({ CardsData }) {

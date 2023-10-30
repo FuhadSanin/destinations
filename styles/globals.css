@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&family=Qwigley&display=swap");
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
 
@@ -9,6 +11,8 @@ body {
   --primary-color: #092068;
   --secondary-color: #70c0f2;
 }
+
+/* -----------------------home-section-------------------------------------- */
 
 .card-container {
   margin-bottom: 100px;
@@ -92,7 +96,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 10rem;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .destinations-card {
   width: 80%;
@@ -102,7 +106,8 @@ body {
   align-items: center;
 }
 
-/* Footer.css */
+/* -----------------------footer-section-------------------------------------- */
+
 ul {
   margin: 0;
   padding: 0;
@@ -277,7 +282,7 @@ ul {
   color: #cccccc;
 }
 
-/* navbar */
+/* -----------------------navbar-section-------------------------------------- */
 
 .navbar {
   background-color: var(--primary-color);
@@ -328,4 +333,133 @@ ul {
 
 .tab-content {
   margin-top: 10px;
+}
+
+/* -----------------------booking-section-------------------------------------- */
+
+#booking {
+  width: 100%;
+  margin-top: 20px;
+  height: fit-content;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+@keyframes animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+#booking::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#93a5cf, #e4efe9);
+  clip-path: circle(20% at left 40%);
+}
+#booking::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#ee9ca7, #ffdde1);
+  clip-path: circle(22% at right 55%);
+}
+
+#booking .booking-wrapper {
+  width: 80%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#booking .title {
+  color: #14213d;
+  text-align: center;
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+#booking .desc {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Qwigley", cursive;
+  padding-bottom: 20px;
+  color: #006d77;
+}
+
+#booking .booking-body {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* Form Container */
+.form-container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Form Group */
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Label Styles */
+.form-group label {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  transition: 0.2s;
+  color: #555;
+}
+
+/* Input Styles */
+.form-group input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  transition: border-bottom-color 0.2s;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Button Hover Styles */
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+.form-group input:focus ~ label,
+.form-group input:valid ~ label {
+  top: -12px;
+  font-size: 12px;
+  color: #007bff;
+}
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
